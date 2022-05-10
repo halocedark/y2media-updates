@@ -1,0 +1,278 @@
+
+/*Start Fonts*/
+/* Open Sans */
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/Roboto-Thin.eot");
+    src: url("../font/Roboto-Thin.eot?#iefix") format('embedded-opentype'),
+         url("../font/Roboto-Thin.woff2") format('woff2'),
+         url("../font/Roboto-Thin.woff") format('woff'),
+         url("../font/Roboto-Thin.ttf") format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/Roboto-Light.eot");
+    src: url("../font/Roboto-Light.eot?#iefix") format('embedded-opentype'),
+         url("../font/Roboto-Light.woff2") format('woff2'),
+         url("../font/Roboto-Light.woff") format('woff'),
+         url("../font/Roboto-Light.ttf") format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/Roboto-Regular.eot");
+    src: url("../font/Roboto-Regular.eot?#iefix") format('embedded-opentype'),
+         url("../font/Roboto-Regular.woff2") format('woff2'),
+         url("../font/Roboto-Regular.woff") format('woff'),
+         url("../font/Roboto-Regular.ttf") format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url('../font/Roboto-Medium.eot');
+    src: url('../font/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../font/Roboto-Medium.woff2') format('woff2'),
+         url('../font/Roboto-Medium.woff') format('woff'),
+         url('../font/Roboto-Medium.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url('../font/Roboto-Bold.eot');
+    src: url('../font/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../font/Roboto-Bold.woff2') format('woff2'),
+         url('../font/Roboto-Bold.woff') format('woff'),
+         url('../font/Roboto-Bold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url('../font/Roboto-Bold.eot');
+    src: url('../font/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../font/Roboto-Bold.woff2') format('woff2'),
+         url('../font/Roboto-Bold.woff') format('woff'),
+         url('../font/Roboto-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+/*End Fonts*/
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif !important;
+    overflow: hidden;
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+
+.loading-screen-container
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #9CECFB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.loading-screen-container
+.wrapper
+{
+    padding: 1em;
+    text-align: center;
+}
+.loading-screen-container .icon
+{
+    margin-bottom: 1.5em;
+}
+.loading-screen-container .icon
+img
+{
+    width: 50px;
+}
+.loading-screen-container
+.quotes-div .quote {
+    padding: 1em;
+    border-radius: 50px;
+    border-left: 10px solid #4459f5ab;
+    border-bottom: 10px solid #4459f51c;
+    margin-bottom: 1em;
+    box-shadow: inset -2px 20px 0.5em #4459f521;
+}
+.loading-screen-container
+.quotes-div .quote .quote-text
+{
+    font-weight: 400;
+    color: #000000;
+    font-style: italic;
+    font-size: 14px;
+}
+.loading-screen-container
+.quotes-div .quote .quote-text
+.quote-author {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 15px;
+    color: #ebebeb;
+}
+.loading-screen-container
+.quotes-div .quote .quote-text
+.quote-author::before {
+    content: '';
+    height: 1px;
+    width: 30px;
+    display: inline-block;
+    background: #ffffff;
+    position: relative;
+    top: -5px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.loading-screen-container
+.quotes-div .quote .quote-text
+.quote-text-content {
+    position: relative;
+    color: #ffffff;
+}
+.loading-screen-container
+.quotes-div .quote .quote-text
+.quote-text-content .cursor
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    height: 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    animation: anim_cursor .7s infinite;
+}
+@keyframes anim_cursor
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+.loading-screen-container
+.quotes-div .quote 
+.quote-author
+{
+    font-style: italic;
+    font-weight: 100;
+    font-size: 13px;
+    color: #ffffff;
+    margin-top: .5em;
+}
+.loading-screen-container
+.quotes-div .quote 
+.quote-author::before
+{
+    content: '';
+    height: 1px;
+    width: 5px;
+    display: inline-block;
+    background: #e6e6e6;
+    position: relative;
+    top: -5px;
+    margin-right: 5px;
+}
+.loading-screen-container
+.loader img
+{
+    width: 30px;
+    opacity: .7;
+}
+.loading-screen-container
+.copyright
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    padding: 1em;
+    text-align: center;
+    color: #ffffff;
+}
+.loading-screen-container
+.copyright p
+{
+    margin: 0;
+}
+.loading-screen-container
+.copyright .cr-bold
+{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.loading-screen-container
+.copyright .cr-small
+{
+    font-weight: 200;
+    text-transform: capitalize;
+    font-size: 15px;
+    color: #f1f1f1;
+}
+.loading-screen-container
+.copyright .cr-date
+{
+    font-weight: 100;
+    font-size: 13px;
+    color: #f1f1f1;
+}
+
+
+
+
+
